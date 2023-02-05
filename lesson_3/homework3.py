@@ -55,7 +55,7 @@ print(users_list2, new_user_list2)
 users_list3 = ["Vazgen", "Chris Tacker", "Nikola Tesla"]
 rm_user_index = users_list3.index(input(f'Your users are {users_list3}, who do you want to remove? '))
 rm_user = users_list3.pop(rm_user_index)
-print(f'User {rm_user} is removed.Your users are {users_list3}')
+print(f'User {rm_user.upper()} is removed.Your users are {users_list3}')
 
 
 
