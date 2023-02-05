@@ -5,7 +5,7 @@
 users_list = ['Vardan', 'Vazgen', 'Jarviz']
 
 print(users_list[0], users_list[1], users_list[2])
-
+users_list[users_list.index('Vazgen')] = 'Mike'
 
 # 2. Ունենք 2 list 
 #    	x = [1,2,3,4,5,6]
@@ -21,7 +21,6 @@ print(len(x + z))
 
 # sorted => sortavoruma mer listy veradarcnum nor ref
 # len => talisa listi length@
-# sum => hashvuma listi tveri gumary, ashxatuma int-eri kam float-neri het
 
 # 4. Ստեղծել երկու input():
 #	Առաջինը պետքա ունենա սենց հրավերքի տեքստ - how many words do you want to type?
@@ -65,10 +64,10 @@ print(f'User {rm_user} is removed.Your users are {users_list3}')
 
 numbers_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-print(sum(numbers_list[1:][::2]))
+print(numbers_list[1::2])
 
 
 # 1. list-ի որ մեթոդով կարող ենք գտնել տրված արժեքի index-ը:
 # index
 # 2. Ինչ է անում del արտահատությունը ու ինչով է տարբերվում remove()-ից:
-# del aneluc index enq talis remove method-i jamanak value
+# del aneluc index enq talis remove method-i jamanak value , del-ov karanq object kam list jnjenq amboxjutyamb
