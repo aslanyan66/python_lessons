@@ -77,7 +77,7 @@ print('chipavorvac e', x)
 
 my_name = 'jarvis'
 
-print(dict(list(zip(my_name, my_name[::-1]))))
+print(dict(zip(my_name, my_name[::-1])))
 
 
 #  1. setDefault()
