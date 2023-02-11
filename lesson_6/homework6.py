@@ -1,8 +1,8 @@
 # *** Task 1
 x = {1, 2, 4, 5, 6}
-y = {5, 6, 7, 8, 9}
+y = {7, 8, 9, 5, 6}
 
-print(x - x.symmetric_difference(y))
+print(x.intersection(y))
 print(x - y)
 print(x.difference(y))
 
@@ -26,16 +26,13 @@ file_2_path = 'file_2.txt'
 with open(file_1_path, 'a') as file_1:
   file_1.write('File one have created.\n')
   file_1.write('Have added some text to file one.')
-  file_1.close()
 
 with open(file_2_path, 'a') as file_2:
   file_2.write('File one have created.\n')
   file_2.write('Have added some text to file one.')
-  file_2.close()
 
 with open(f"{input('Which file do you want to read?')}.txt", 'r') as current_file:
   print(current_file.read())
-  current_file.close()
 
 # ***
 
@@ -55,22 +52,21 @@ user1, user2 = [
   }
 ]
 
-with open('users_file.txt','w') as users_file:
-  users_file.write(f'user 1: first_name = {user1["first_name"]}, last_name = {user1["last_name"]}, age = {user1["age"]}\n'
-                   f'user 2: first_name = {user2["first_name"]}, last_name = {user2["last_name"]}, age = {user2["age"]}')
-  users_file.close()
+with open('users_file.txt', 'w') as users_file:
+  users_file.write(
+    f'user 1: first_name = {user1["first_name"]}, last_name = {user1["last_name"]}, age = {user1["age"]}\n'
+    f'user 2: first_name = {user2["first_name"]}, last_name = {user2["last_name"]}, age = {user2["age"]}')
 
-
-# Research
-#	1. isdisjoint() մեթոդը
-
-# isdisjoint methodov stugumend set-erin u ete erku setery chunen yndhanur itemner stanum enq True hakarak depqum False
-
-set1 = {30, 20, 10}
-set2 = {3, 2, 1}
-
-result = set1.isdisjoint(set2)
-print(result)
+# # Research
+# #	1. isdisjoint() մեթոդը
+#
+# # isdisjoint methodov stugumend set-erin u ete erku setery chunen yndhanur itemner stanum enq True hakarak depqum False
+#
+# set1 = {30, 20, 10}
+# set2 = {3, 2, 1}
+#
+# result = set1.isdisjoint(set2)
+# print(result)
 
 #	2. remove()-ի ու discard()-ի տարբերությունը
 
