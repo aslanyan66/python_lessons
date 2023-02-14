@@ -10,10 +10,10 @@
 #	    1.2 Սորտավորեք test_result-ը ըստ նվազման:
 
 user = {
-  'name':'Jarviz',
-  'age' : '100',
-  'professions':['robot', 'dancer'],
-  'test_result':[14,5,8,99,12,2,3,5,4]
+    'name': 'Jarviz',
+    'age': '100',
+    'professions': ['robot', 'dancer'],
+    'test_result': [14, 5, 8, 99, 12, 2, 3, 5, 4]
 }
 
 print(user['professions'][0])
@@ -31,10 +31,10 @@ user['test_result'].sort(reverse=True)
 #		2.2 Ավելացրեք ձեր սիրած միրգը ու ինչքան եք իրան գնահատում
 
 fruits = {
-  "banana": 4,
-  "apple": 2,
-  "orange": 1.5,
-  "pear": 3
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
 }
 
 print(sum(fruits.values()))
@@ -54,20 +54,21 @@ fruits['cabbage'] = 2
 #			Հետո տպեք print('chipavorvac e', x)
 
 persons = [
-  {'first_name':'', 'last_name':'', 'age': 15, 'phone':{'brend':'', 'number':'', 'is_5g':''}},
-  {'first_name':'', 'last_name':'', 'age':'', 'phone':{'brend':'', 'number':'', 'is_5g':''}}
+    {'first_name': '', 'last_name': '', 'age': 15, 'phone': {'brend': '', 'number': '', 'is_5g': ''}},
+    {'first_name': '', 'last_name': '', 'age': '', 'phone': {'brend': '', 'number': '', 'is_5g': ''}}
 ]
 
 persons[0]['phone']['is_5g'] = True
 persons[1]['phone']['is_5g'] = False
 
-persons[0]['car'] = { 'model': '', 'type': '', 'max_speed': '' }
-persons[1]['car'] = { 'model': '', 'type': '', 'max_speed': '' }
+persons[0]['car'] = {'model': '', 'type': '', 'max_speed': ''}
+persons[1]['car'] = {'model': '', 'type': '', 'max_speed': ''}
 
 print(f'user1 ==> {persons[0]["phone"]["is_5g"]} , user2 ==> {persons[1]["phone"]["is_5g"]}')
 
 current_user = persons[0]
-x = current_user['age'] > 18 and current_user['phone']['is_5g'] == True or not 'bill' in current_user['first_name'].lower() and not 'gates' in current_user['last_name'].lower()
+x = current_user['age'] > 18 and current_user['phone']['is_5g'] == True or not 'bill' in current_user[
+    'first_name'].lower() and not 'gates' in current_user['last_name'].lower()
 
 print('chipavorvac e', x)
 
@@ -79,14 +80,13 @@ my_name = 'jarvis'
 
 print(dict(zip(my_name, my_name[::-1])))
 
-
 #  1. setDefault()
 # setDefault-@ nmana get methodin uxaki ete tvyal property-n chi linum avelacnum dict-i mej tvyal property-in
 #  2. fromkeys()
 # fromkeys-@ dict-i methoda vor sequence-neri himman vra dict-a karucum arjeqnel veragruma defaultov gnacac@
 #  3. Փորձեք կիրառել մեր անցած ֆունկցիաները dict-ի համար և գրեք արդյունքներիը
 
-dc = {'a': 1, 'b': 2, 'c': 3,'z': 8, 'o': 3}
+dc = {'a': 1, 'b': 2, 'c': 3, 'z': 8, 'o': 3}
 
 print(sorted(dc), 'sorted')
 print(len(dc))

@@ -1,8 +1,8 @@
 # *** Task 1
 x = {1, 2, 4, 5, 6}
-y = {7, 8, 9, 5, 6}
+y = {7, 4, 9, 5, 6}
 
-print(x.intersection(y))
+print(y.intersection(x))
 print(x - y)
 print(x.difference(y))
 
