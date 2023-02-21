@@ -26,6 +26,18 @@ def get_repeated_items_list(sequence_object):
 
 print(get_repeated_items_list(users))
 
+def f(sequence_object):
+  unique_items = set()
+  result = set()
+
+  for item in sequence_object:
+    if item in unique_items:
+      result.add(item)
+    else:
+      unique_items.add(item)
+
+  return list(result)
+
 # *** Task 3
 
 def get_sum_digits(num):
@@ -40,7 +52,7 @@ print(get_sum_digits(12))
 # *** Task 4
 
 def get_prime_numbers_list(n=100):
-  list = [1]
+  primes_list = [1]
   for i in range(2, n):
     is_prime = True
     for j in range(2, i // 2 + 1):
@@ -48,14 +60,13 @@ def get_prime_numbers_list(n=100):
         is_prime = False
         break
     if is_prime:
-      list.append(i)
-  return list
+      primes_list.append(i)
+  return primes_list
 
 print(get_prime_numbers_list())
 
 # *** Task 5
 
-# 0,1,1,2,3,5,8,13,21
 def get_current_fib(num):
   if num <= 0:
     return 'Enter positive number'
@@ -86,3 +97,22 @@ print(get_current_fib(5))
 
 # *args-i depqum stanum enq tuple, vorpes functioni argument bayc kancheluc ansahman argumentner karanq dnenq
 # **kwargs-i depqum vorpes dict enq stanum functionum bayc kancheluc talisenq senc f(name="flan")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
