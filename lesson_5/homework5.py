@@ -67,7 +67,7 @@ persons[1]['car'] = {'model': '', 'type': '', 'max_speed': ''}
 print(f'user1 ==> {persons[0]["phone"]["is_5g"]} , user2 ==> {persons[1]["phone"]["is_5g"]}')
 
 current_user = persons[0]
-x = current_user['age'] > 18 and current_user['phone']['is_5g'] == True or not 'bill' in current_user[
+x = current_user['age'] > 18 and current_user['phone']['is_5g'] == True or 'bill' not in current_user[
     'first_name'].lower() and not 'gates' in current_user['last_name'].lower()
 
 print('chipavorvac e', x)

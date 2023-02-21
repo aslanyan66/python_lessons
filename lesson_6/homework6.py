@@ -3,8 +3,8 @@ x = {1, 2, 4, 5, 6}
 y = {7, 4, 9, 5, 6}
 
 print(y.intersection(x))
-print(x - y)
-print(x.difference(y))
+print(x - y)  # 1.2
+print(x.difference(y))  # 1.2
 
 # ***
 
@@ -70,4 +70,4 @@ with open('users_file.txt', 'w') as users_file:
 
 #	2. remove()-ի ու discard()-ի տարբերությունը
 
-# ete remove enq anum item u chi linum seti mech error enq stanum discardi depqum che
+# ete remove enq anum item u chi linum seti mech ERROR enq stanum discardi depqum che

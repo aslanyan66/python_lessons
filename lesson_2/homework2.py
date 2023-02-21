@@ -1,7 +1,8 @@
 # Task 1. Ինչ type կվերադարցնի հետեվյալ արտահայտությունը ու ինչ պատճառով ` 1 + 2.0 +3
-# 6 qani vor float enq ogtagorcum.
+# 6.0 qani vor float enq ogtagorcum.
 
-# Task2 2. Ունենք հետեվյալ արտահայտությունը` 2 * 3 + 4.Ինչպես կարանք փոխենք արտահայտությունը այնպես որ առաջինը գումարի հետո նոր բազմապատկի   
+# Task2 2. Ունենք հետեվյալ արտահայտությունը` 2 * 3 + 4.Ինչպես կարանք փոխենք արտահայտությունը
+# այնպես որ առաջինը գումարի հետո նոր բազմապատկի
 #   2 * (3 + 4) 
 
 # Task 3. Ինչպես կարանք կլորացնենք 2.555 որ ստանանք 2.56 
@@ -72,7 +73,7 @@ print(str[-1])
 
 # 3. Փորձեք հասկանալ ինչ են անում """-ը, օրինակ """some long text"""
 
-# It is for keeping string lines or tabs or create string whithin will be text like that "Some text".
+# It is for keeping string lines or tabs or create string whithin will be text like that "Some text". Meaning multiline texts.
 
 
 

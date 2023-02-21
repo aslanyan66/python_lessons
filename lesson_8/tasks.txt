@@ -1,0 +1,26 @@
+	1.	Ունենք list-եր
+
+		last_names = ['Adams','Allen','Brooks','Davidson','Sargsyan','Jenkins']
+		armenian_last_names = []
+
+		Օգտվելով while cycle-ից գտեք և ավելացրեք հայկական ազգանունները ըստ yan վերջավորության armenian_last_names list-ում:
+
+
+	2.	Ունենք string long_word = 'arevachachapaylatakum':
+
+		Օգտվելով for cycle-ից գտնել թե քանի հատ a կա մեր string-ի մեջ:
+
+	3.  alpabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+		Համարակարել այբուբենի տառերը ըստ կենտ թվերի ձեր իմացած ամենակարճ ճանապարհով և ստացեք dict
+
+		Օրինակ ՝ {'a': 1, 'b': 3, 'c' : 5, .....}
+
+	4.	Գտնել 10 թվի ֆակտորիալը օգտվելով կամ while-ից կամ for-ից
+
+
+	5.	alpabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+		Առանց օգտվելու մեթոդներից և ֆունկցիաներից reverse արեք alpabet list-ը cycle-ի և slice-ի միջոցով
+
+    Research
+	1. enumerate() function

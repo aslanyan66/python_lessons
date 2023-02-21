@@ -57,3 +57,4 @@ while i < 50:
 # Research
 # 	1. Ինչպես է աշխատում else-ը while-ի հետ
 # ete while-i paymany chi bavararum mtnuma else, aysinqn ete infinit loop-i mej chnknenq mi angam kashxati else
+

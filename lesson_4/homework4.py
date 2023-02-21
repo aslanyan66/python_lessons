@@ -60,7 +60,7 @@ users_list = [
                 ]
 ]
 
-x = zip(users_list[0:7],*users_list[7])
+x = zip(users_list[0:7], *users_list[7])
 
 print(list(x))
 
