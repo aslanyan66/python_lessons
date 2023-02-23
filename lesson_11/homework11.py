@@ -53,9 +53,9 @@ add_data_to_db(','.join(users[-1].values()))
 
 # *** Task 2
 
-get_Number = (lambda val: val[0] if not isinstance(val[0], list) else get_Number(val[0]))([[[[[10]]]]])
+get_number = lambda val: val[0] if not isinstance(val[0], list) else get_number(val[0])
 
-print(get_Number([[[[[10]]]]]), 'task 2')
+print(get_number([[[[[10]]]]]), 'task 2')
 
 
 # *** Task 3
@@ -70,7 +70,7 @@ def get_sum(numbers_list, total=0, idx=0):
   return get_sum(numbers_list, total, idx + 1)
 
 
-print(get_sum([[1, 2, [3, 4], [5, 6, [10, 19]]]]), 'task 3')
+print(get_sum([1, 2, [3, 4], 5, [6, [7, 8], 9], 10]), 'task 3')
 
 # Research
 #	1.	lambda functions
