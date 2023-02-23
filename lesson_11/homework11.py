@@ -1,55 +1,49 @@
 # *** Task 1
 
-# *** 1.1 start
-def get_keys(file_path='db.txt'):
-  with open(file_path) as file:
-    keys = file.readlines()[0].strip()
-  return keys.split(',')
-
-def get_users_data(file_path='db.txt'):
-  with open(file_path) as file:
-    data = file.readlines()[1:]
-  return [values.strip().split(',') for values in data]
-
-def create_users(keys, data):
-  users = []
-
-  for values in data:
-    users.append(dict(zip(keys, values)))
-  return users
-
-users = create_users(get_keys(), get_users_data())
-
-print(users, '1.1')
-
-# *** 1.1 end
-
-
-
-# ### 1.2 start
-
-def add_user_to_current_list(users, **kwargs):
-  users.append(kwargs)
-
 my_data = {
   'first_name': 'Azat', 'last_name': 'Aslanyan', 'age': '26', 'profession': 'quick learner', 'country': 'Armenia',
   'favorite_film': 'Gattaca', 'favorite_singer': 'chgidem', 'favorite_chips': 'lays'
 }
 
-add_user_to_current_list(users, **my_data)
+# *** 1.1 start
 
-print(users, 'task 1.2')
-# ### 1.2 end
+def generate_dict_from_db():
+  with open('db.txt') as db:
+    keys = db.readline().strip().split(',')
+    result = [dict(zip(keys, line.strip().split(','))) for line in db]
+
+  result.append(my_data)
+  return result
 
 
+users = generate_dict_from_db()
+print(users, '1.1')
 
-# ### 1.3 start
-def add_data_to_db(new_data, db_path='db.txt'):
-  with open(db_path, 'a') as db:
-    db.write(f'\n{new_data}')
 
-add_data_to_db(','.join(users[-1].values()))
-# ### 1.3 end
+# *** 1.1 end
+
+# *** 1.2 start
+
+updated_users = (lambda users, **kwargs: [{**user, **kwargs} for user in users])(users, firend='flan', friend_of_friend='fstan')
+print(updated_users,'1.2')
+
+# *** 1.2 end
+
+# *** 1.3 start
+
+def write_users_in_db(users, path='db.txt'):
+  keys = ','.join(users[0].keys())
+  values = [','.join(user.values()) for user in users]
+  data = '\n'.join([keys, *values])
+
+  with open(path, 'w') as db:
+    db.writelines(data)
+  print('See 1.3 in db.txt')
+
+write_users_in_db(updated_users)
+
+# *** 1.3 end
+
 
 # *** Task 2
 
