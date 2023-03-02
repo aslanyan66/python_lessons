@@ -25,7 +25,7 @@ print(users, '1.1')
 # *** 1.2 start
 
 updated_users = (lambda users, **kwargs: [{**user, **kwargs} for user in users])(users, firend='flan', friend_of_friend='fstan')
-print(updated_users,'1.2')
+print(updated_users, '1.2')
 
 # *** 1.2 end
 
