@@ -6,14 +6,16 @@
 
 # raise-ov , assert
 
-
 # *** Task 3
 
 import auth
 
 auth_action = input('login or registration? ')
 auth_method = getattr(auth, auth_action)
-
+try:
+  assert 5 > 6
+except Exception as err:
+  print(err, 'err')
 try:
   auth_method()
 except Exception as err:
