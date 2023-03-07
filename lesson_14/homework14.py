@@ -64,4 +64,7 @@ print(y, 'Task 6')
 # 	3.	Գրեք մեր անցած sequence data type-երը:
 # str, list, set, frozenset, tuple
 # 	4.	Գրեք sequence-ի և iterable-ի տարբերությունները:
-# voch bolor iterable-nernen sequence bayc bolor sequence-nery iterable en
+# voch bolor iterable-nernen sequence bayc bolor sequence-nery iterable en, bolor iterable-nery unen __iter__ method iranc mech
+
+
+print({'name': 'Azat'}.__iter__())
