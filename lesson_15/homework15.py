@@ -6,9 +6,11 @@ print(symmetric_items, 'task 1')
 
 # *** Task 2
 
-def custom_map(cb, sequence):
-  return (cb(item) for item in sequence)
+def custom_map(cb, *args):
+  return (cb(*items) for items in zip(*args))
 
+print(list(custom_map(lambda x: x * 2, [1,2,3,4,5,6])), 'task 2')
+print(list(map(lambda x: x * 2, [1,2,3,4,5,6])), 'task 2')
 
 # *** Task 3
 
