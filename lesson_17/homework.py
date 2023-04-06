@@ -4,27 +4,26 @@ from functools import reduce
 
 # *** Task 1
 
-pattern = r'[A-Z][a-z]*[\s|.|_][A-Z][a-z]+'
-text = """
-          There are many Miqayel_Abrahamyan  Lorem Ipsum available, but the $6700 H.Stepanyan Lorem Ipsum available, but the $6700  P.Petrosyan_5 Lorem Ipsum available, but the $6700  J.Blade Lorem Ipsum available, but the $6700  variations of passages of Lorem Ipsum available, but the $6700 majority have suffered alteration in some form,
-          by injected humour, or randomised words which don't look even slightly  believable. If you are going to use a passage $3,200
-          of Lorem Ipsum, S.Paloyan generated Lorem Ipsum Vardan Vardanyan 8,200 you need to be sure there isn't anything embarrassing hidden in the middle of text. All $5,200 the Lorem Ipsum
-          generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator  $3,200.00 on the 
-          Internet. It uses a dictionary of over 200 Latin words, combined with a handful of $5200  model sentence structures, to generate 
-          Lorem Ipsum which looks reasonable.The S.Paloyan generated Lorem Ipsum Vardan Vardanyan generated Lorem Ipsum is therefore always free from repetition, injected humour,
-          or non-characteristic Miqayel_Abrahamyan Lorem Ipsum available, but the $6700  H.Stepanyan Lorem Ipsum available, but the $6700  P.Petrosyan_5 Lorem Ipsum available, but the $6700  J.Blade Lorem Ipsum available, but the $6700  words etc.
-       """
+pattern = r'[A-Z][a-z]*[.][A-Z][a-z]+'
+text = 'S.Paloyan Vardan Vardanyan Miqayel_Abrahamyan H.Stepanyan P.Petrosyan_5 J.Blade'
+
 names = re.findall(pattern, text)
 print(names, 'Task 1')
 
 # *** Task 2
 
-pattern = r'[$]+\d+[,\d]+'
+pattern = r'[$]+\d+[,]+[\d]+'
 text = '''
-        There are many variations of passages of Lorem Ipsum available, but the $6700 majority have suffered alteration in some form,
-        by injected humour, or randomised words which don't look even slightly  believable. If you are going to use a passage $3,200
-        of Lorem Ipsum, 8,200 you need to be sure there isn't anything embarrassing hidden in the middle of text. All $5,200 the Lorem Ipsum
-        generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator  $3,200.00 on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of $5200  model sentence structures, to generate Lorem Ipsum which looks reasonable.
+        There are many variations of passages of Lorem Ipsum available, but the $6700 majority have suffered alteration 
+        in some form,
+        by injected humour, or randomised words which don't look even slightly  believable. If you are going to use 
+        a passage $3,200
+        of Lorem Ipsum, 8,200 you need to be sure there isn't anything embarrassing hidden in the middle of text. 
+        All $5,200 the Lorem Ipsum
+        generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator 
+         $3,200.00 on the Internet. 
+        It uses a dictionary of over 200 Latin words, combined with a handful of $5200  model sentence structures,
+         to generate Lorem Ipsum which looks reasonable.
         The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
 		  '''
 prices = re.findall(pattern, text)
